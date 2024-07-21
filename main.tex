@@ -1,0 +1,33 @@
+\documentclass[compress, blue, hyperref={unicode, bookmarks=true, pdfpagemode=FullScreen}]{beamer}
+\usetheme{Madrid}
+\mode<presentation>
+\usepackage{quiver}
+\usepackage{macros}
+
+\setbeamertemplate{theorem begin}
+{\begin{\inserttheoremblockenv}
+{\inserttheoremheadfont
+\inserttheoremname 
+\ifx\inserttheoremaddition\@empty\else\ \inserttheoremaddition\fi
+\inserttheorempunctuation}}
+
+\title[QF]{Maximum Likelihood Estimation
+}
+\author[Lê Văn Phong]{Lê Văn Phong}
+\institute[Phổ Dụng]{Phổ Dụng
+}
+
+\date{\today}
+
+\begin{document}
+\frame{\titlepage}
+\frametitle{}
+
+\begin{frame}[allowframebreaks=2]
+\transboxout
+\setbeamertemplate{theorems}[numbered]
+
+\pause
+\end{frame}
+\input{3. MLE}
+\end{document}

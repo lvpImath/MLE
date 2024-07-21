@@ -1,0 +1,167 @@
+\section{MLE}
+\begin{frame}[allowframebreaks=2]{MLE là gì?}
+\transboxout
+\setbeamertemplate{theorems}[numbered]
+\begin{defn}[MLE]
+    \textbf{Maximum Likelihood Estimation} (MLE) là một phương pháp thống kê được sử dụng để \textbf{ước lượng các tham số} của một mô hình phân phối xác suất \textbf{dựa trên dữ liệu quan sát được}. 
+    
+    \textbf{Mục tiêu chính của MLE} là tìm ra các giá trị tham số sao cho mô hình có khả năng tạo ra dữ liệu quan sát được là cao nhất, hay nói cách khác, là \textbf{mô hình phù hợp nhất với dữ liệu thực tế}.
+\end{defn}
+
+\pause
+\end{frame}
+
+\begin{frame}[allowframebreaks=2]{Ứng dụng MLE trong đầu tư?}
+\transboxout
+\setbeamertemplate{theorems}[numbered]
+\begin{enumerate}
+    \item \textbf{Dự báo biến động giá và rủi ro}: Các mô hình như GARCH sử dụng MLE để ước lượng các tham số, từ đó \textit{dự báo biến động giá trong tương lai} và giúp nhà đầu tư quản lý rủi ro hiệu quả hơn.
+    
+    \item \textbf{Đánh giá hiệu quả danh mục đầu tư}: MLE được sử dụng trong mô hình CAPM để \textit{ước lượng hệ số beta}, giúp \textit{đánh giá hiệu quả của một danh mục đầu tư} so với thị trường chung.
+    
+    \item \textbf{Định giá các sản phẩm phái sinh}: Mô hình Black-Scholes, một công cụ quan trọng trong định giá quyền chọn, sử dụng MLE để \textit{ước lượng biến động ngầm định của tài sản cơ sở.}
+    
+    \item \textbf{Phân tích kỹ thuật}: Nhiều chỉ báo kỹ thuật phổ biến như đường trung bình động (MA) sử dụng MLE để \textit{xác định xu hướng thị trường và tạo ra các tín hiệu giao dịch}.
+
+    \item \textbf{Xây dựng các mô hình đầu tư phức tạp}: Như ARIMA, Copula, mạng nơ-ron, để \textit{dự báo giá, phân tích rủi ro, tối ưu danh mục đầu tư},...
+\end{enumerate}
+\pause
+\end{frame}
+
+\begin{frame}[allowframebreaks=2]
+\transboxout
+\setbeamertemplate{theorems}[numbered]
+\begin{remark*}
+MLE là một phương pháp ước lượng tham số thống kê dựa trên việc tìm các giá trị tham số tối đa hóa hàm likelihood (khả năng). Trong đó \textbf{Hàm likelihood} \textit{đo lường mức độ phù hợp của một mô hình thống kê với dữ liệu quan sát được.}
+\end{remark*}
+
+Giả sử ta có một mẫu dữ liệu \textbf{độc lập và phân phối giống nhau} là $X = \{x_1,x_2,\ldots,x_n\}$ với \textit{hàm mật độ xác suất} là $f(x,\theta)$, trong đó $\theta$ là vector tham số cần ước lượng. Hàm \textbf{likelihood} được định nghĩa bởi
+\[L(\theta~|~X):= \prod_{i=1}^{n}f(x_i,\theta).\]
+Phương pháp MLE sẽ tìm giá trị 
+\[\theta^* = \arg\max L(\theta~|~X)\] 
+để tối đa hóa hàm likelihood nói trên.
+\pause
+\end{frame}
+
+\begin{frame}[allowframebreaks=2]
+\transboxout
+\setbeamertemplate{theorems}[numbered]
+Trong thực tế, ta thường tính toán với hàm \textbf{log-likelihood} vì hàm $\ln$ là một hàm đơn điệu tăng, nên nó không làm thay đổi điểm cực đại và còn dễ tính toán hơn,
+\[l(\theta~|~X) = \ln{L(\theta~|~X)} = \sum_{i=1}^n{\ln{f(x_i,\theta)}}.\]
+Ta giải phương trình sau giúp tìm $\theta^*$ để $l(\theta~|~X)$ đạt $\max$
+\[\dfrac{\partial l(\theta~|~X)}{\partial \theta} = 0.\]
+\pause
+\end{frame}
+
+\begin{frame}[allowframebreaks=2]
+\transboxout
+\setbeamertemplate{theorems}[numbered]
+\begin{exam*}[Phân phối Bernoulli]
+    \begin{enumerate}
+        \item 
+    \end{enumerate}
+\end{exam*}
+\pause
+\end{frame}
+\begin{frame}[allowframebreaks=2]
+\transboxout
+\setbeamertemplate{theorems}[numbered]
+
+\pause
+\end{frame}
+\begin{frame}[allowframebreaks=2]
+\transboxout
+\setbeamertemplate{theorems}[numbered]
+
+\pause
+\end{frame}
+\begin{frame}[allowframebreaks=2]
+\transboxout
+\setbeamertemplate{theorems}[numbered]
+
+\pause
+\end{frame}
+\begin{frame}[allowframebreaks=2]
+\transboxout
+\setbeamertemplate{theorems}[numbered]
+
+\pause
+\end{frame}
+\begin{frame}[allowframebreaks=2]
+\transboxout
+\setbeamertemplate{theorems}[numbered]
+
+\pause
+\end{frame}
+\begin{frame}[allowframebreaks=2]
+\transboxout
+\setbeamertemplate{theorems}[numbered]
+
+\pause
+\end{frame}
+\begin{frame}[allowframebreaks=2]
+\transboxout
+\setbeamertemplate{theorems}[numbered]
+
+\pause
+\end{frame}
+\begin{frame}[allowframebreaks=2]
+\transboxout
+\setbeamertemplate{theorems}[numbered]
+
+\pause
+\end{frame}
+\begin{frame}[allowframebreaks=2]
+\transboxout
+\setbeamertemplate{theorems}[numbered]
+
+\pause
+\end{frame}
+\begin{frame}[allowframebreaks=2]
+\transboxout
+\setbeamertemplate{theorems}[numbered]
+
+\pause
+\end{frame}
+\begin{frame}[allowframebreaks=2]
+\transboxout
+\setbeamertemplate{theorems}[numbered]
+
+\pause
+\end{frame}
+\begin{frame}[allowframebreaks=2]
+\transboxout
+\setbeamertemplate{theorems}[numbered]
+
+\pause
+\end{frame}
+\begin{frame}[allowframebreaks=2]
+\transboxout
+\setbeamertemplate{theorems}[numbered]
+
+\pause
+\end{frame}
+\begin{frame}[allowframebreaks=2]
+\transboxout
+\setbeamertemplate{theorems}[numbered]
+
+\pause
+\end{frame}
+\begin{frame}[allowframebreaks=2]
+\transboxout
+\setbeamertemplate{theorems}[numbered]
+
+\pause
+\end{frame}
+\begin{frame}[allowframebreaks=2]
+\transboxout
+\setbeamertemplate{theorems}[numbered]
+
+\pause
+\end{frame}
+\begin{frame}[allowframebreaks=2]
+\transboxout
+\setbeamertemplate{theorems}[numbered]
+
+\pause
+\end{frame}
